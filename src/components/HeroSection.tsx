@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export function HeroSection() {
   return (
     <section className="bg-gradient-to-br from-stellar-50 to-stellar-100 py-20 px-4">
@@ -9,13 +11,25 @@ export function HeroSection() {
           Discover, list, and trade property with blockchain certainty.
           Non-custodial wallet signing, transparent transactions, and instant settlements.
         </p>
-        <div className="flex gap-4 justify-center">
-          <button className="px-6 py-3 bg-stellar-500 text-white rounded-lg font-semibold hover:bg-stellar-600 transition-colors">
+        <div className="flex flex-wrap gap-4 justify-center">
+          <Link
+            href="/discover"
+            className="px-6 py-3 bg-stellar-500 text-white rounded-lg font-semibold hover:bg-stellar-600 transition-colors"
+          >
             Start Exploring
-          </button>
-          <button className="px-6 py-3 bg-white text-stellar-600 border border-stellar-200 rounded-lg font-semibold hover:bg-stellar-50 transition-colors">
+          </Link>
+          <Link
+            href="/list"
+            className="px-6 py-3 bg-white text-stellar-600 border border-stellar-200 rounded-lg font-semibold hover:bg-stellar-50 transition-colors"
+          >
+            List Property
+          </Link>
+          <Link
+            href="/#features"
+            className="px-6 py-3 text-stellar-600 font-semibold hover:underline"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
       </div>
     </section>

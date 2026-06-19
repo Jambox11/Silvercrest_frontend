@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import { Header } from '@/components/Header';
+import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
   title: 'SilverKrest - Tokenized Real Estate on Stellar',
@@ -15,10 +15,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Header />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

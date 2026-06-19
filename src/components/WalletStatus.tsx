@@ -1,19 +1,30 @@
 'use client';
 
 import { useState } from 'react';
+import type { StellarNetwork } from '@/lib/types';
+import { STELLAR_EXPLORER_BASE } from '@/lib/constants';
 
 interface WalletStatusProps {
   publicKey: string;
+  network: StellarNetwork;
   onDisconnect: () => void;
 }
 
-export function WalletStatus({ publicKey, onDisconnect }: WalletStatusProps) {
+export function WalletStatus({ publicKey, network, onDisconnect }: WalletStatusProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const truncatedKey = publicKey.slice(0, 6) + '...' + publicKey.slice(-6);
+  const explorerBase = STELLAR_EXPLORER_BASE[network];
 
-  const copyToClipboard = () => {
-    navigator.clipboard.writeText(publicKey);
+  const copyToClipboard = async () => {
+    try {
+      await navigator.clipboard.writeText(publicKey);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      setCopied(false);
+    }
   };
 
   return (
@@ -32,10 +43,10 @@ export function WalletStatus({ publicKey, onDisconnect }: WalletStatusProps) {
             onClick={copyToClipboard}
             className="w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
           >
-            Copy Address
+            {copied ? 'Copied!' : 'Copy Address'}
           </button>
           <a
-            href={`https://stellar.expert/explorer/testnet/account/${publicKey}`}
+            href={`${explorerBase}/account/${publicKey}`}
             target="_blank"
             rel="noopener noreferrer"
             className="block w-full text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 transition-colors"
