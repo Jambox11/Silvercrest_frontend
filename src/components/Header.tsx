@@ -62,6 +62,7 @@ export function Header() {
               <WalletStatus
                 publicKey={wallet.publicKey}
                 network={wallet.network}
+                source={wallet.source}
                 onDisconnect={wallet.disconnect}
               />
             ) : (

@@ -4,7 +4,14 @@ import { Providers } from '@/components/Providers';
 
 export const metadata: Metadata = {
   title: 'SilverKrest - Tokenized Real Estate on Stellar',
-  description: 'Discover, list, and trade tokenized real estate on Stellar blockchain',
+  description:
+    'Discover, compare, and trade tokenized real estate on Stellar. Freighter-aware wallet, Horizon health, and catalog sessions without secret keys.',
+  keywords: ['Stellar', 'Soroban', 'real estate', 'tokenization', 'Freighter'],
+  openGraph: {
+    title: 'SilverKrest',
+    description: 'Tokenized real estate marketplace UI for Stellar testnet.',
+    type: 'website',
+  },
 };
 
 export default function RootLayout({

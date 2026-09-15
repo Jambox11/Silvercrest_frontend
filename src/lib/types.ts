@@ -1,9 +1,12 @@
 export type StellarNetwork = 'testnet' | 'mainnet';
 
+export type WalletSource = 'freighter' | 'session' | null;
+
 export interface WalletState {
   isConnected: boolean;
   publicKey: string | null;
   network: StellarNetwork;
+  source: WalletSource;
 }
 
 export type ListingStatus = 'active' | 'pending' | 'sold';

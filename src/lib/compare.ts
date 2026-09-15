@@ -1,7 +1,7 @@
 import { COMPARE_STORAGE_KEY } from '@/lib/constants';
 import { readJson, writeJson } from '@/lib/storage';
 
-const MAX_COMPARE = 3;
+export const MAX_COMPARE = 3;
 
 export function getCompareIds(): string[] {
   return readJson<string[]>(COMPARE_STORAGE_KEY, []);
@@ -17,4 +17,14 @@ export function toggleCompare(propertyId: string): string[] {
   const next = [propertyId, ...current].slice(0, MAX_COMPARE);
   writeJson(COMPARE_STORAGE_KEY, next);
   return next;
+}
+
+export function removeCompare(propertyId: string): string[] {
+  const next = getCompareIds().filter(id => id !== propertyId);
+  writeJson(COMPARE_STORAGE_KEY, next);
+  return next;
+}
+
+export function isCompared(propertyId: string): boolean {
+  return getCompareIds().includes(propertyId);
 }

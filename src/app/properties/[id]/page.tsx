@@ -13,6 +13,8 @@ import { MakeOfferModal } from '@/components/MakeOfferModal';
 import { RelatedProperties } from '@/components/RelatedProperties';
 import { DetailSkeleton } from '@/components/ui/LoadingSkeleton';
 import { ErrorMessage } from '@/components/ui/ErrorMessage';
+import { explorerAccountUrl } from '@/lib/stellar';
+import { CompareToggle } from '@/components/CompareToggle';
 import type { Property, Listing } from '@/lib/types';
 
 export default function PropertyDetailPage({
@@ -129,9 +131,18 @@ export default function PropertyDetailPage({
           )}
 
           <div className="mt-8 space-y-3 border-t border-gray-200 pt-6 text-sm">
-            <Row label="Owner" value={truncateAddress(property.owner)} mono />
+            <Row
+              label="Owner"
+              value={truncateAddress(property.owner)}
+              href={explorerAccountUrl(wallet.network, property.owner)}
+              mono
+            />
             <Row label="NFT Token" value={property.nftId} mono />
             <Row label="Contract" value={truncateAddress(property.nftContract, 8, 8)} mono />
+          </div>
+
+          <div className="mt-4">
+            <CompareToggle propertyId={property.id} />
           </div>
 
           {activeListing ? (
@@ -225,11 +236,32 @@ export default function PropertyDetailPage({
   );
 }
 
-function Row({ label, value, mono }: { label: string; value: string; mono?: boolean }) {
+function Row({
+  label,
+  value,
+  mono,
+  href,
+}: {
+  label: string;
+  value: string;
+  mono?: boolean;
+  href?: string;
+}) {
   return (
     <div className="flex justify-between gap-4">
       <span className="text-gray-400">{label}</span>
-      <span className={mono ? 'font-mono text-gray-700' : 'text-gray-700'}>{value}</span>
+      {href ? (
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className={mono ? 'font-mono text-stellar-600 hover:underline' : 'text-stellar-600 hover:underline'}
+        >
+          {value}
+        </a>
+      ) : (
+        <span className={mono ? 'font-mono text-gray-700' : 'text-gray-700'}>{value}</span>
+      )}
     </div>
   );
 }

@@ -7,10 +7,11 @@ import { STELLAR_EXPLORER_BASE } from '@/lib/constants';
 interface WalletStatusProps {
   publicKey: string;
   network: StellarNetwork;
+  source?: 'freighter' | 'session' | null;
   onDisconnect: () => void;
 }
 
-export function WalletStatus({ publicKey, network, onDisconnect }: WalletStatusProps) {
+export function WalletStatus({ publicKey, network, source, onDisconnect }: WalletStatusProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
 
@@ -35,6 +36,9 @@ export function WalletStatus({ publicKey, network, onDisconnect }: WalletStatusP
       >
         <div className="w-2 h-2 bg-green-500 rounded-full"></div>
         {truncatedKey}
+        {source === 'freighter' && (
+          <span className="text-[10px] uppercase tracking-wide text-stellar-500">Freighter</span>
+        )}
       </button>
 
       {isOpen && (

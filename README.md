@@ -10,6 +10,7 @@ Set `NEXT_PUBLIC_USE_MOCK=true` (default). The UI reads `src/mocks` including ci
 
 - `npm run dev` — local app
 - `npm run build` — production build
+- `npm test` — Stellar key, wallet adapter, and filter tests
 - `npm run lint` — lint
 
 ## Routes

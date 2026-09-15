@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { HorizonStatus } from '@/components/HorizonStatus';
 
 export function Footer() {
   return (
@@ -42,8 +43,9 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-gray-100 text-center text-xs text-gray-400">
-        © {new Date().getFullYear()} SilverKrest. Demo app with simulated data — not financial advice.
+      <div className="max-w-7xl mx-auto mt-10 pt-6 border-t border-gray-100 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-400">
+        <p>© {new Date().getFullYear()} SilverKrest. Catalog sessions never store secret keys.</p>
+        <HorizonStatus />
       </div>
     </footer>
   );
