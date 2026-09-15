@@ -1,6 +1,6 @@
 # SilverKrest Frontend
 
-Next.js marketplace for **tokenized real estate on Stellar**. Sample catalogs power Discover, listings, offers, fractional lots, insights, and wallet-style flows so the product can be demoed without mainnet risk.
+Next.js marketplace for **tokenized real estate on Stellar**. City catalogs, amenities, and neighborhood briefs power Discover, listings, offers, fractional lots, insights, and wallet-style flows without mainnet keys.
 
 ## Sample data
 
