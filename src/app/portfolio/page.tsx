@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { useWallet } from '@/hooks/useWallet';
+import { useWallet } from '@/context/WalletProvider';
 import { usePortfolio } from '@/hooks/usePortfolio';
 import { formatPrice, formatDate, truncateAddress } from '@/lib/format';
 import { StatusBadge } from '@/components/StatusBadge';

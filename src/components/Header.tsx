@@ -2,15 +2,17 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useWallet } from '@/hooks/useWallet';
+import { useWallet } from '@/context/WalletProvider';
 import { WalletConnect } from './WalletConnect';
 import { NetworkSwitcher } from './NetworkSwitcher';
 import { WalletStatus } from './WalletStatus';
 
 const NAV = [
   { href: '/discover', label: 'Discover' },
+  { href: '/insights', label: 'Insights' },
   { href: '/list', label: 'List Property' },
   { href: '/portfolio', label: 'Portfolio' },
+  { href: '/watchlist', label: 'Watchlist' },
   { href: '/activity', label: 'Activity' },
 ];
 

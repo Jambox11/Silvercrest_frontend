@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { use, useState, useEffect } from 'react';
 import { usePropertyDetail } from '@/hooks/usePropertyDetail';
-import { useWallet } from '@/hooks/useWallet';
+import { useWallet } from '@/context/WalletProvider';
 import { getProperties, getListings } from '@/lib/api';
 import { getRelatedProperties } from '@/lib/filterProperties';
 import { formatPrice, formatDate, truncateAddress } from '@/lib/format';

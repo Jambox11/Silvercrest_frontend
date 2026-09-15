@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { useWallet } from '@/hooks/useWallet';
+import { useWallet } from '@/context/WalletProvider';
 import { useToast } from '@/context/ToastProvider';
 import { submitListing } from '@/lib/api';
 import { WalletConnect } from '@/components/WalletConnect';

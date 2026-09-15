@@ -1,7 +1,8 @@
+import { EXTRA_CATALOG } from './catalog';
 import type { Property } from '@/lib/types';
 import { MOCK_WALLET_PUBLIC_KEY, MOCK_SELLER_2 } from '@/lib/constants';
 
-export const MOCK_PROPERTIES: Property[] = [
+const BASE_PROPERTIES: Property[] = [
   {
     id: 'prop_001',
     title: 'Sunny Beachfront Villa',
@@ -253,3 +254,5 @@ export function searchMockProperties(query: string): Property[] {
 export function getMockFeaturedProperties(): Property[] {
   return MOCK_PROPERTIES.filter(p => p.featured);
 }
+
+export const MOCK_PROPERTIES: Property[] = [...BASE_PROPERTIES, ...EXTRA_CATALOG];

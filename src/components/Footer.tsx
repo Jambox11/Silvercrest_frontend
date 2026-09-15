@@ -21,26 +21,23 @@ export function Footer() {
           <h4 className="font-semibold text-gray-900 text-sm mb-3">Platform</h4>
           <ul className="space-y-2 text-sm text-gray-500">
             <li><Link href="/discover" className="hover:text-stellar-600">Discover</Link></li>
+            <li><Link href="/insights" className="hover:text-stellar-600">Insights</Link></li>
+            <li><Link href="/fractional" className="hover:text-stellar-600">Fractional</Link></li>
+            <li><Link href="/map" className="hover:text-stellar-600">Map</Link></li>
+            <li><Link href="/agents" className="hover:text-stellar-600">Agents</Link></li>
             <li><Link href="/list" className="hover:text-stellar-600">List Property</Link></li>
-            <li><Link href="/portfolio" className="hover:text-stellar-600">Portfolio</Link></li>
-            <li><Link href="/activity" className="hover:text-stellar-600">Activity</Link></li>
           </ul>
         </div>
 
         <div>
           <h4 className="font-semibold text-gray-900 text-sm mb-3">Resources</h4>
           <ul className="space-y-2 text-sm text-gray-500">
-            <li>
-              <a href="https://stellar.org" target="_blank" rel="noopener noreferrer" className="hover:text-stellar-600">
-                Stellar Network
-              </a>
-            </li>
-            <li>
-              <a href="https://stellar.expert/explorer/testnet" target="_blank" rel="noopener noreferrer" className="hover:text-stellar-600">
-                Stellar Expert
-              </a>
-            </li>
-            <li><span className="text-gray-400">Testnet Demo</span></li>
+            <li><Link href="/about" className="hover:text-stellar-600">About</Link></li>
+            <li><Link href="/how-it-works" className="hover:text-stellar-600">How it works</Link></li>
+            <li><Link href="/faq" className="hover:text-stellar-600">FAQ</Link></li>
+            <li><Link href="/help" className="hover:text-stellar-600">Help</Link></li>
+            <li><Link href="/legal/terms" className="hover:text-stellar-600">Terms</Link></li>
+            <li><Link href="/legal/privacy" className="hover:text-stellar-600">Privacy</Link></li>
           </ul>
         </div>
       </div>

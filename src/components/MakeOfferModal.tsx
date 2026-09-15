@@ -4,7 +4,7 @@ import { useState } from 'react';
 import type { Property, Listing } from '@/lib/types';
 import { formatPrice } from '@/lib/format';
 import { submitOffer } from '@/lib/api';
-import { useWallet } from '@/hooks/useWallet';
+import { useWallet } from '@/context/WalletProvider';
 import { useToast } from '@/context/ToastProvider';
 
 interface MakeOfferModalProps {
