@@ -2,6 +2,8 @@
 
 Next.js marketplace for **tokenized real estate on Stellar**. City catalogs, amenities, and neighborhood briefs power Discover, listings, offers, fractional lots, insights, and wallet-style flows without mainnet keys.
 
+Live preview: https://silvercrest-frontend.vercel.app
+
 ## Sample data
 
 Set `NEXT_PUBLIC_USE_MOCK=true` (default). The UI reads `src/mocks` including city catalogs, agents, FAQs, documents, and ledgers. No secret keys are stored in this repo.
