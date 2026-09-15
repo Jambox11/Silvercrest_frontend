@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Raleigh, NC. */
+/** Sample catalog entry for Raleigh, NC. */
 export const CATALOG_RALEIGH: Property = {
   id: 'prop_025',
   title: 'Oakwood victorian',
@@ -11,7 +11,7 @@ export const CATALOG_RALEIGH: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_025',
-  metadataUri: 'ipfs://QmDummy025',
+  metadataUri: 'ipfs://QmCatalog025',
   createdAt: 1697045000,
   image: 'https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_RALEIGH: Property = {
   propertyType: 'house',
   yearBuilt: 2005,
   featured: true,
-  description: 'Dummy tokenized listing in Raleigh, NC. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Raleigh, NC. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 35.779,
   lng: -78.638,
   agentId: 'agent_002',

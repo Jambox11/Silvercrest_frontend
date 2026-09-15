@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Phoenix, AZ. */
+/** Sample catalog entry for Phoenix, AZ. */
 export const CATALOG_PHOENIX: Property = {
   id: 'prop_019',
   title: 'Arcadia ranch',
@@ -11,7 +11,7 @@ export const CATALOG_PHOENIX: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_019',
-  metadataUri: 'ipfs://QmDummy019',
+  metadataUri: 'ipfs://QmCatalog019',
   createdAt: 1697039000,
   image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_PHOENIX: Property = {
   propertyType: 'house',
   yearBuilt: 1999,
   featured: false,
-  description: 'Dummy tokenized listing in Phoenix, AZ. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Phoenix, AZ. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 33.448,
   lng: -112.074,
   agentId: 'agent_004',

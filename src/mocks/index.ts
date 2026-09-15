@@ -10,3 +10,5 @@ export * from './priceHistory';
 export * from './fractional';
 export * from './insights';
 export * from './kyc';
+export * from './amenities';
+export * from './markets';

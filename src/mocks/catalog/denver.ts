@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Denver, CO. */
+/** Sample catalog entry for Denver, CO. */
 export const CATALOG_DENVER: Property = {
   id: 'prop_015',
   title: 'RiNo courtyard home',
@@ -11,7 +11,7 @@ export const CATALOG_DENVER: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_015',
-  metadataUri: 'ipfs://QmDummy015',
+  metadataUri: 'ipfs://QmCatalog015',
   createdAt: 1697035000,
   image: 'https://images.unsplash.com/photo-1518780664697-55e3ad933588?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_DENVER: Property = {
   propertyType: 'house',
   yearBuilt: 1995,
   featured: true,
-  description: 'Dummy tokenized listing in Denver, CO. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Denver, CO. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 39.739,
   lng: -104.99,
   agentId: 'agent_004',

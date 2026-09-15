@@ -3,7 +3,7 @@ import { PageHeader } from '@/components/PageHeader';
 export default function TermsPage() {
   return (
     <div className="max-w-3xl mx-auto px-4 py-10">
-      <PageHeader eyebrow="Legal" title="Terms of use" subtitle="Dummy legal copy for the demo app. Not a binding contract." />
+      <PageHeader eyebrow="Legal" title="Terms of use" subtitle="Sample legal copy for the demo app. Not a binding contract." />
       <div className="text-sm text-gray-600 space-y-3">
         <p>
           SilverKrest is a demonstration of tokenized real estate workflows on Stellar. Listing prices,

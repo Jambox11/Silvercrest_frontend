@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Chicago, IL. */
+/** Sample catalog entry for Chicago, IL. */
 export const CATALOG_CHICAGO: Property = {
   id: 'prop_016',
   title: 'Gold Coast high-rise',
@@ -11,7 +11,7 @@ export const CATALOG_CHICAGO: Property = {
   owner: MOCK_WALLET_PUBLIC_KEY,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_016',
-  metadataUri: 'ipfs://QmDummy016',
+  metadataUri: 'ipfs://QmCatalog016',
   createdAt: 1697036000,
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
   beds: 2,
@@ -20,8 +20,8 @@ export const CATALOG_CHICAGO: Property = {
   propertyType: 'condo',
   yearBuilt: 1996,
   featured: false,
-  description: 'Dummy tokenized listing in Chicago, IL. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Chicago, IL. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 41.878,
   lng: -87.63,
   agentId: 'agent_001',

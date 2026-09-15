@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Bend, OR. */
+/** Sample catalog entry for Bend, OR. */
 export const CATALOG_BEND: Property = {
   id: 'prop_044',
   title: 'Deschutes river cabin',
@@ -11,7 +11,7 @@ export const CATALOG_BEND: Property = {
   owner: MOCK_WALLET_PUBLIC_KEY,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_044',
-  metadataUri: 'ipfs://QmDummy044',
+  metadataUri: 'ipfs://QmCatalog044',
   createdAt: 1697064000,
   image: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800',
   beds: 3,
@@ -20,8 +20,8 @@ export const CATALOG_BEND: Property = {
   propertyType: 'cabin',
   yearBuilt: 1984,
   featured: false,
-  description: 'Dummy tokenized listing in Bend, OR. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Bend, OR. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 44.058,
   lng: -121.315,
   agentId: 'agent_001',

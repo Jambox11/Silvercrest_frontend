@@ -1,3 +1,3 @@
 # Insights
 
-City indexes are static dummy research cards.
+City indexes are static sample research cards.

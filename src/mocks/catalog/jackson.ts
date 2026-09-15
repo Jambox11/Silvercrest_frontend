@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Jackson, WY. */
+/** Sample catalog entry for Jackson, WY. */
 export const CATALOG_JACKSON: Property = {
   id: 'prop_047',
   title: 'Teton view chalet',
@@ -11,7 +11,7 @@ export const CATALOG_JACKSON: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_047',
-  metadataUri: 'ipfs://QmDummy047',
+  metadataUri: 'ipfs://QmCatalog047',
   createdAt: 1697067000,
   image: 'https://images.unsplash.com/photo-1518780664697-55e3ad933588?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_JACKSON: Property = {
   propertyType: 'cabin',
   yearBuilt: 1987,
   featured: false,
-  description: 'Dummy tokenized listing in Jackson, WY. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Jackson, WY. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 43.48,
   lng: -110.762,
   agentId: 'agent_004',

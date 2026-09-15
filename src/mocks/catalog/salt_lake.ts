@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Salt Lake City, UT. */
+/** Sample catalog entry for Salt Lake City, UT. */
 export const CATALOG_SALT_LAKE: Property = {
   id: 'prop_024',
   title: 'Avenues craftsman',
@@ -11,7 +11,7 @@ export const CATALOG_SALT_LAKE: Property = {
   owner: MOCK_WALLET_PUBLIC_KEY,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_024',
-  metadataUri: 'ipfs://QmDummy024',
+  metadataUri: 'ipfs://QmCatalog024',
   createdAt: 1697044000,
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_SALT_LAKE: Property = {
   propertyType: 'house',
   yearBuilt: 2004,
   featured: false,
-  description: 'Dummy tokenized listing in Salt Lake City, UT. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Salt Lake City, UT. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 40.761,
   lng: -111.891,
   agentId: 'agent_001',

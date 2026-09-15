@@ -1,3 +1,3 @@
 # KYC
 
-Settings shows a dummy verified profile for walkthroughs.
+Settings shows a sample verified profile for walkthroughs.

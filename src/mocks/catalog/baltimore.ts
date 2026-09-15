@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Baltimore, MD. */
+/** Sample catalog entry for Baltimore, MD. */
 export const CATALOG_BALTIMORE: Property = {
   id: 'prop_039',
   title: 'Fells Point rowhome',
@@ -11,7 +11,7 @@ export const CATALOG_BALTIMORE: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_039',
-  metadataUri: 'ipfs://QmDummy039',
+  metadataUri: 'ipfs://QmCatalog039',
   createdAt: 1697059000,
   image: 'https://images.unsplash.com/photo-1518780664697-55e3ad933588?w=800',
   beds: 3,
@@ -20,8 +20,8 @@ export const CATALOG_BALTIMORE: Property = {
   propertyType: 'house',
   yearBuilt: 2019,
   featured: false,
-  description: 'Dummy tokenized listing in Baltimore, MD. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Baltimore, MD. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 39.29,
   lng: -76.612,
   agentId: 'agent_004',

@@ -13,7 +13,7 @@ export function AgentCard({ agent }: { agent: AgentProfile }) {
         <h3 className="font-semibold text-gray-900">{agent.name}</h3>
         <p className="text-sm text-stellar-600">{agent.title}</p>
         <p className="text-xs text-gray-500 mt-1">
-          {agent.location} · {agent.closedDeals} dummy closes · {agent.rating.toFixed(1)} rating
+          {agent.location} · {agent.closedDeals} sample closes · {agent.rating.toFixed(1)} rating
         </p>
       </div>
     </Link>

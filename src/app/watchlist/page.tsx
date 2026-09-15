@@ -19,7 +19,7 @@ export default function WatchlistPage() {
       <PageHeader
         eyebrow="Saved"
         title="Watchlist"
-        subtitle="Dummy saved homes persist in local storage on this browser."
+        subtitle="Sample saved homes persist in local storage on this browser."
       />
       {watched.length === 0 ? (
         <EmptyState

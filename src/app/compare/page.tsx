@@ -29,7 +29,7 @@ export default function ComparePage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 py-10">
-      <PageHeader eyebrow="Tools" title="Compare listings" subtitle="Side-by-side dummy specs for up to three properties." />
+      <PageHeader eyebrow="Tools" title="Compare listings" subtitle="Side-by-side sample specs for up to three properties." />
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm border border-gray-200 rounded-xl bg-white">
           <thead>

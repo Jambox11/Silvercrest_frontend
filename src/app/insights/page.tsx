@@ -14,7 +14,7 @@ export default function InsightsPage() {
       <PageHeader
         eyebrow="Markets"
         title="Market insights"
-        subtitle="Dummy city indexes so dashboards, newsletters, and research screens have realistic numbers."
+        subtitle="Sample city indexes so dashboards, newsletters, and research screens have realistic numbers."
       />
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
         <StatCard label="Properties" value={stats.totalProperties} />

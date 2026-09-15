@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Las Vegas, NV. */
+/** Sample catalog entry for Las Vegas, NV. */
 export const CATALOG_LAS_VEGAS: Property = {
   id: 'prop_032',
   title: 'Summerlin modern',
@@ -11,7 +11,7 @@ export const CATALOG_LAS_VEGAS: Property = {
   owner: MOCK_WALLET_PUBLIC_KEY,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_032',
-  metadataUri: 'ipfs://QmDummy032',
+  metadataUri: 'ipfs://QmCatalog032',
   createdAt: 1697052000,
   image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_LAS_VEGAS: Property = {
   propertyType: 'house',
   yearBuilt: 2012,
   featured: false,
-  description: 'Dummy tokenized listing in Las Vegas, NV. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Las Vegas, NV. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 36.17,
   lng: -115.14,
   agentId: 'agent_001',

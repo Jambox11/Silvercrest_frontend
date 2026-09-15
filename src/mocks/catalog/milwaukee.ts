@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Milwaukee, WI. */
+/** Sample catalog entry for Milwaukee, WI. */
 export const CATALOG_MILWAUKEE: Property = {
   id: 'prop_028',
   title: 'Third Ward loft',
@@ -11,7 +11,7 @@ export const CATALOG_MILWAUKEE: Property = {
   owner: MOCK_WALLET_PUBLIC_KEY,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_028',
-  metadataUri: 'ipfs://QmDummy028',
+  metadataUri: 'ipfs://QmCatalog028',
   createdAt: 1697048000,
   image: 'https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800',
   beds: 1,
@@ -20,8 +20,8 @@ export const CATALOG_MILWAUKEE: Property = {
   propertyType: 'condo',
   yearBuilt: 2008,
   featured: false,
-  description: 'Dummy tokenized listing in Milwaukee, WI. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Milwaukee, WI. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 43.039,
   lng: -87.906,
   agentId: 'agent_001',

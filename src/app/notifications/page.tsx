@@ -10,7 +10,7 @@ export default function NotificationsPage() {
       <PageHeader
         eyebrow="Inbox"
         title="Notifications"
-        subtitle="Dummy alerts for offers, listings, KYC, and system notices."
+        subtitle="Sample alerts for offers, listings, KYC, and system notices."
       />
       <ul className="divide-y divide-gray-100 border border-gray-200 rounded-xl bg-white">
         {items.map(item => (

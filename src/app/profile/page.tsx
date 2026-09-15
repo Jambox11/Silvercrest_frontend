@@ -12,7 +12,7 @@ export default function ProfilePage() {
       <PageHeader
         eyebrow="Account"
         title="Investor profile"
-        subtitle="Dummy identity and fractional positions for the connected demo wallet."
+        subtitle="Sample identity and fractional positions for the connected demo wallet."
       />
       <div className="rounded-xl border border-gray-200 bg-white p-5 mb-6">
         <p className="text-sm text-gray-500">Display name</p>
@@ -27,7 +27,7 @@ export default function ProfilePage() {
             </Link>
             <p className="text-sm text-gray-600 mt-1">
               {pos.shares} shares · {formatPrice(sharesCost(pos.shares, pos.sharePrice))} cost basis ·{' '}
-              {ownershipPct(pos.shares, 400).toFixed(1)}% of a 400-share dummy pool
+              {ownershipPct(pos.shares, 400).toFixed(1)}% of a 400-share sample pool
             </p>
           </li>
         ))}

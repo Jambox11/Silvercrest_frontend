@@ -9,7 +9,7 @@ export default function TransactionsPage() {
       <PageHeader
         eyebrow="Ledger"
         title="Transactions"
-        subtitle="Dummy Stellar hashes for tokenize, list, offer, and dividend events."
+        subtitle="Sample Stellar hashes for tokenize, list, offer, and dividend events."
       />
       <div className="overflow-x-auto border border-gray-200 rounded-xl bg-white">
         <table className="min-w-full text-sm">

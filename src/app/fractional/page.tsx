@@ -10,7 +10,7 @@ export default function FractionalPage() {
       <PageHeader
         eyebrow="Ownership"
         title="Fractional marketplace"
-        subtitle="Dummy share lots. Yields and pools are simulated for product demos."
+        subtitle="Sample share lots. Yields and pools are simulated for product demos."
       />
       <div className="overflow-x-auto border border-gray-200 rounded-xl bg-white">
         <table className="min-w-full text-sm">

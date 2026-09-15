@@ -6,7 +6,7 @@ export const MOCK_FAQS: FaqItem[] = [
     category: 'Getting started',
     question: 'Is this live mainnet trading?',
     answer:
-      'No. SilverKrest currently ships with dummy marketplace data and simulated wallet flows so the product can be explored without signing real transactions.',
+      'No. SilverKrest currently ships with sample marketplace data and simulated wallet flows so the product can be explored without signing real transactions.',
   },
   {
     id: 'faq_002',
@@ -20,14 +20,14 @@ export const MOCK_FAQS: FaqItem[] = [
     category: 'Tokenization',
     question: 'What does tokenizing a property mean here?',
     answer:
-      'A property NFT is registered on the dummy Soroban registry with metadata, owner, and listing state. Ownership transfer is coordinated by the contract, not by holding user funds.',
+      'A property NFT is registered on the sample Soroban registry with metadata, owner, and listing state. Ownership transfer is coordinated by the contract, not by holding user funds.',
   },
   {
     id: 'faq_004',
     category: 'Tokenization',
     question: 'Can I buy a fraction of a listing?',
     answer:
-      'Some dummy listings expose sharePrice, totalShares, and availableShares. Fractional purchase is mocked in the UI and API.',
+      'Some sample listings expose sharePrice, totalShares, and availableShares. Fractional purchase is mocked in the UI and API.',
   },
   {
     id: 'faq_005',
@@ -41,7 +41,7 @@ export const MOCK_FAQS: FaqItem[] = [
     category: 'Compliance',
     question: 'Is KYC required?',
     answer:
-      'The demo includes a dummy KYC profile so the settings and profile screens can show verified / pending states. It is not a real identity check.',
+      'The demo includes a sample KYC profile so the settings and profile screens can show verified / pending states. It is not a real identity check.',
   },
   {
     id: 'faq_007',
@@ -55,7 +55,7 @@ export const MOCK_FAQS: FaqItem[] = [
     category: 'Data',
     question: 'Where does listing data come from?',
     answer:
-      'By default NEXT_PUBLIC_USE_MOCK=true serves local dummy catalogs. Set it to false to prefer the FastAPI backend, with mock fallback on errors.',
+      'By default NEXT_PUBLIC_USE_MOCK=true serves local sample catalogs. Set it to false to prefer the FastAPI backend, with mock fallback on errors.',
   },
 ];
 

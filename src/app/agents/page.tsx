@@ -9,7 +9,7 @@ export default function AgentsPage() {
       <PageHeader
         eyebrow="People"
         title="Marketplace agents"
-        subtitle="Dummy specialist profiles attached to listings. Not real licensed brokers."
+        subtitle="Sample specialist profiles attached to listings. Not real licensed brokers."
       />
       <div className="space-y-4">
         {agents.map(agent => (

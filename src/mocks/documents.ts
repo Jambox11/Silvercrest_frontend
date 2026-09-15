@@ -5,8 +5,8 @@ export const MOCK_DOCUMENTS: PropertyDocument[] = [
     id: 'doc_001',
     propertyId: 'prop_001',
     kind: 'deed',
-    title: 'Warranty deed (dummy PDF)',
-    uri: 'ipfs://QmDummyDeed001',
+    title: 'Warranty deed (sample PDF)',
+    uri: 'ipfs://QmCatalogDeed001',
     uploadedAt: 1697000000,
   },
   {
@@ -14,7 +14,7 @@ export const MOCK_DOCUMENTS: PropertyDocument[] = [
     propertyId: 'prop_001',
     kind: 'inspection',
     title: 'Coastal inspection summary',
-    uri: 'ipfs://QmDummyInspect001',
+    uri: 'ipfs://QmCatalogInspect001',
     uploadedAt: 1697000500,
   },
   {
@@ -22,7 +22,7 @@ export const MOCK_DOCUMENTS: PropertyDocument[] = [
     propertyId: 'prop_002',
     kind: 'appraisal',
     title: 'Aspen appraisal 2024',
-    uri: 'ipfs://QmDummyAppraise002',
+    uri: 'ipfs://QmCatalogAppraise002',
     uploadedAt: 1697001500,
   },
   {
@@ -30,7 +30,7 @@ export const MOCK_DOCUMENTS: PropertyDocument[] = [
     propertyId: 'prop_007',
     kind: 'insurance',
     title: 'Vineyard casualty policy',
-    uri: 'ipfs://QmDummyIns007',
+    uri: 'ipfs://QmCatalogIns007',
     uploadedAt: 1697006500,
   },
   {
@@ -38,7 +38,7 @@ export const MOCK_DOCUMENTS: PropertyDocument[] = [
     propertyId: 'prop_006',
     kind: 'hoa',
     title: 'Back Bay HOA packet',
-    uri: 'ipfs://QmDummyHoa006',
+    uri: 'ipfs://QmCatalogHoa006',
     uploadedAt: 1697005500,
   },
 ];

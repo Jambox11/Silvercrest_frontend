@@ -10,7 +10,7 @@ export default function SettingsPage() {
       <PageHeader
         eyebrow="Account"
         title="Settings"
-        subtitle="Dummy preferences and KYC status for walkthroughs."
+        subtitle="Sample preferences and KYC status for walkthroughs."
       />
       <div className="space-y-4">
         <section className="rounded-xl border border-gray-200 bg-white p-5">

@@ -24,7 +24,7 @@ export default async function AgentDetailPage({
         <p className="text-sm text-gray-500">{agent.location}</p>
         <p className="text-xs font-mono text-gray-400">{truncateAddress(agent.publicKey)}</p>
         <p className="text-sm">
-          {agent.closedDeals} dummy closes · {agent.rating.toFixed(1)} rating
+          {agent.closedDeals} sample closes · {agent.rating.toFixed(1)} rating
         </p>
       </div>
     </div>

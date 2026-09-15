@@ -1,7 +1,7 @@
 import type { Property } from '@/lib/types';
 import { MOCK_SELLER_2, MOCK_WALLET_PUBLIC_KEY } from '@/lib/constants';
 
-/** Dummy catalog entry for Kansas City, MO. */
+/** Sample catalog entry for Kansas City, MO. */
 export const CATALOG_KANSAS_CITY: Property = {
   id: 'prop_027',
   title: 'Brookside foursquare',
@@ -11,7 +11,7 @@ export const CATALOG_KANSAS_CITY: Property = {
   owner: MOCK_SELLER_2,
   nftContract: 'CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABSC4',
   nftId: 'nft_027',
-  metadataUri: 'ipfs://QmDummy027',
+  metadataUri: 'ipfs://QmCatalog027',
   createdAt: 1697047000,
   image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800',
   beds: 4,
@@ -20,8 +20,8 @@ export const CATALOG_KANSAS_CITY: Property = {
   propertyType: 'house',
   yearBuilt: 2007,
   featured: false,
-  description: 'Dummy tokenized listing in Kansas City, MO. Specs and pricing are simulated for the SilverKrest marketplace demo.',
-  amenities: ['Dummy inventory', 'Stellar NFT', 'Testnet ready'],
+  description: 'Sample tokenized listing in Kansas City, MO. Specs and pricing are simulated for the SilverKrest marketplace demo.',
+  amenities: ['Sample inventory', 'Stellar NFT', 'Testnet ready'],
   lat: 39.1,
   lng: -94.579,
   agentId: 'agent_004',

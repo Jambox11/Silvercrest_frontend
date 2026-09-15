@@ -1,3 +1,5 @@
+import { CITY_INSIGHTS } from './insights/catalog';
+import { MARKET_BRIEFS } from './markets';
 import type { MarketInsight } from '@/lib/types';
 
 export const MOCK_INSIGHTS: MarketInsight[] = [
@@ -5,7 +7,7 @@ export const MOCK_INSIGHTS: MarketInsight[] = [
     id: 'ins_001',
     title: 'Miami tokenized inventory tightens',
     city: 'Miami, FL',
-    summary: 'Dummy index: oceanfront ask prices up 4.2% as fractional lots clear faster than whole-asset listings.',
+    summary: 'Sample index: oceanfront ask prices up 4.2% as fractional lots clear faster than whole-asset listings.',
     changePct: 4.2,
     medianPrice: 890000,
     publishedAt: 1697020000,
@@ -32,7 +34,7 @@ export const MOCK_INSIGHTS: MarketInsight[] = [
     id: 'ins_004',
     title: 'Austin loft absorption',
     city: 'Austin, TX',
-    summary: 'Dummy industrial lofts under $400k continue to attract first-time on-chain buyers.',
+    summary: 'Sample industrial lofts under $400k continue to attract first-time on-chain buyers.',
     changePct: 3.0,
     medianPrice: 385000,
     publishedAt: 1697010000,
@@ -40,5 +42,5 @@ export const MOCK_INSIGHTS: MarketInsight[] = [
 ];
 
 export function getMockInsights(): MarketInsight[] {
-  return [...MOCK_INSIGHTS].sort((a, b) => b.publishedAt - a.publishedAt);
+  return [...MOCK_INSIGHTS, ...CITY_INSIGHTS, ...MARKET_BRIEFS].sort((a, b) => b.publishedAt - a.publishedAt);
 }

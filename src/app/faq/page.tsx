@@ -9,7 +9,7 @@ export default function FaqPage() {
       <PageHeader
         eyebrow="Help"
         title="Frequently asked questions"
-        subtitle="Answers for the dummy marketplace: wallets, tokenization, offers, and testnet."
+        subtitle="Answers for the sample marketplace: wallets, tokenization, offers, and testnet."
       />
       <FaqList items={items} />
     </div>

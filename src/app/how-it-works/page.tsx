@@ -8,7 +8,7 @@ const STEPS = [
   },
   {
     title: 'Tokenize a property',
-    body: 'Metadata, NFT reference, and owner are written to the dummy registry.',
+    body: 'Metadata, NFT reference, and owner are written to the sample registry.',
   },
   {
     title: 'List or buy shares',
@@ -26,7 +26,7 @@ export default function HowItWorksPage() {
       <PageHeader
         eyebrow="Product"
         title="How SilverKrest works"
-        subtitle="Four steps from wallet connect to simulated settlement. All figures on this page are dummy data."
+        subtitle="Four steps from wallet connect to simulated settlement. All figures on this page are sample data."
       />
       <ol className="space-y-4">
         {STEPS.map((step, index) => (

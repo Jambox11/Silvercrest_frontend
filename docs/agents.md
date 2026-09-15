@@ -1,3 +1,3 @@
 # Agents
 
-Dummy specialist profiles, not licensed brokers.
+Sample specialist profiles, not licensed brokers.

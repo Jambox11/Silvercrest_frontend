@@ -2,7 +2,7 @@ import type { MarketInsight } from '@/lib/types';
 
 export const INSIGHT_05: MarketInsight = {
   id: 'ins_gen_05',
-  title: 'Dummy market pulse 5',
+  title: 'Sample market pulse 5',
   city: 'Demo City 5',
   summary: 'Simulated research blurb 5 for the SilverKrest insights feed.',
   changePct: 1.1,

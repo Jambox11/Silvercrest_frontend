@@ -4,7 +4,7 @@ import type { PropertyDocument } from '@/lib/types';
 
 export function DocumentList({ documents }: { documents: PropertyDocument[] }) {
   if (!documents.length) {
-    return <p className="text-sm text-gray-500">No dummy documents attached.</p>;
+    return <p className="text-sm text-gray-500">No sample documents attached.</p>;
   }
 
   return (

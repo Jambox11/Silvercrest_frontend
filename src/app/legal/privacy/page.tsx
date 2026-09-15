@@ -6,7 +6,7 @@ export default function PrivacyPage() {
       <PageHeader
         eyebrow="Legal"
         title="Privacy"
-        subtitle="Dummy privacy notice. This demo stores watchlist and compare IDs in local storage only."
+        subtitle="Sample privacy notice. This demo stores watchlist and compare IDs in local storage only."
       />
       <div className="text-sm text-gray-600 space-y-3">
         <p>
